@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-7</title>
+</head>
+
+<body>
+
+    <h1>The template literals</h1>
+
+    <script>
+
+        // Expressions Inside Template Literals
+
+        let num = 5;
+        console.log(`The square of 5 is ${num * 5}`)
+
+        let mulitline = `The 
+        sdf asdfs 
+        xxxxxxxxxxxxxxxxxxxxxxxxxx`
+        console.log(mulitline);
+
+
+        //  Function Calls Inside Template Literals
+
+        function test(name) {
+            return `Hello ${name.toUpperCase()}`
+        }
+
+        console.log(`${test("Mohan")}`);
+
+        // Nested Template Literals
+
+        let first = "new item"
+        let second = `you buought ${first} (from online)`
+        console.log(second);
+
+    </script>
+
+</body>
+
+</html>
