@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple counter using closure (pure JS)</title>
+</head>
+
+<body>
+
+    <button id="btn">btn</button>
+
+    <p id="text"></p>
+
+    <script>
+
+        function counter() {
+            let a = 0
+            return function two() {
+                a++
+                document.getElementById('text').textContent = `Clicked ${a} times`;
+            }
+        }
+        const handleClick = counter()
+        document.getElementById('btn').addEventListener('click', handleClick)
+
+    </script>
+
+</body>
+
+</html>
